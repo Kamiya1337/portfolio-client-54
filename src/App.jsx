@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { BookOpenText, FileCheck2, GraduationCap, UserCircle } from 'lucide-react';
 import HomeTab from './components/HomeTab';
 import ProjectsTab from './components/ProjectsTab';
-import EvidenceTable from './components/EvidenceTable';
 import RubricTable from './components/RubricTable';
 import Summary from './components/Summary';
 import { portfolioData } from './data/portfolioData';
@@ -50,7 +49,7 @@ export default function App() {
             </span>
             <span className="hidden min-w-0 sm:block">
               <span className="block text-[10px] font-bold uppercase tracking-[0.18em] text-academic-deep-rose">
-                French Language Portfolio
+                Digital Portfolio
               </span>
               <span className="block truncate text-xs text-academic-muted">Công nghệ số & AI · ULIS - VNU</span>
             </span>
@@ -59,8 +58,7 @@ export default function App() {
           <div className="contents sm:flex sm:items-center sm:gap-5">
             <nav className="order-3 grid w-full grid-cols-3 items-center gap-0 border-t border-academic-deep-rose/10 pt-2 text-center text-[9px] font-bold sm:order-none sm:flex sm:w-auto sm:justify-start sm:gap-6 sm:border-0 sm:pt-0 sm:text-xs md:text-sm" aria-label="Điều hướng chính">
               <a className="nav-link min-w-0 truncate" href="#ho-so">Overview</a>
-              <a className="nav-link min-w-0 truncate" href="#bai-tap">Assignments</a>
-              <a className="nav-link min-w-0 truncate" href="#minh-chung">Evidence</a>
+              <a className="nav-link min-w-0 truncate" href="#bai-tap">Projects</a>
               <a className="nav-link hidden sm:inline" href="#tong-ket">Reflection</a>
             </nav>
             <UserCircle className="hidden text-academic-deep-rose sm:block" size={25} strokeWidth={1.8} />
@@ -71,9 +69,6 @@ export default function App() {
       <main id="top" className="relative z-10 mx-auto max-w-7xl space-y-20 px-5 pb-24 pt-32 md:px-16 md:pt-40 lg:space-y-28">
         <HomeTab />
         <ProjectsTab />
-        <section id="minh-chung" className="section-anchor">
-          <EvidenceTable />
-        </section>
         <section id="tong-ket" className="section-anchor space-y-12">
           <RubricTable />
           <Summary />

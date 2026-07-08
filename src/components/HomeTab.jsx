@@ -1,5 +1,5 @@
 import { portfolioData } from '../data/portfolioData';
-import { ArrowRight, Bot, CheckCircle2, FileText, Globe2, Languages, Quote, Sparkles } from 'lucide-react';
+import { ArrowRight, Bot, CheckCircle2, Globe2, Languages, Quote, Sparkles } from 'lucide-react';
 import avatarImage from '../../docs/avatar.png';
 
 export default function HomeTab() {
@@ -35,10 +35,6 @@ export default function HomeTab() {
               <a href="#bai-tap" className="primary-button inline-flex w-full items-center justify-center gap-3 px-8 py-4 text-sm uppercase sm:w-auto">
                 Xem bài tập
                 <ArrowRight size={20} />
-              </a>
-              <a href="#minh-chung" className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-academic-deep-rose/35 bg-white/45 px-8 py-4 text-sm font-extrabold uppercase tracking-[0.04em] text-academic-deep-rose backdrop-blur-xl transition hover:bg-white/70 sm:w-auto">
-                Mở minh chứng
-                <FileText size={19} />
               </a>
             </div>
           </div>
@@ -86,10 +82,14 @@ export default function HomeTab() {
         </article>
         <article data-reveal className="reveal soft-card hover-lift rounded-[28px] p-8 md:col-span-2 lg:col-span-1">
           <Globe2 className="text-academic-blue" size={28} strokeWidth={1.6} />
-          <span className="section-kicker mt-8 block">Global learning</span>
+          <span className="section-kicker mt-8 block">Mục tiêu học tập</span>
           <h3 className="mt-3 text-2xl text-academic-ink">Văn hóa trong ngôn ngữ</h3>
           <p className="mt-4 text-sm leading-7 text-academic-muted">
-            Học ngôn ngữ là quá trình hiểu con người và văn hóa phía sau cách dùng từ, đặt câu và giao tiếp.
+            • Nắm vững kiến thức về học phần.
+            <br />
+            • Biết ứng dụng AI để hỗ trợ học tập, công việc.
+            <br />
+            • Phát triển kỹ năng sử dụng công nghệ số an toàn, trách nhiệm.
           </p>
         </article>
         <article data-reveal className="reveal soft-card hover-lift rounded-[28px] p-8 md:col-span-2 lg:col-span-1">
@@ -102,9 +102,15 @@ export default function HomeTab() {
         </article>
         <blockquote data-reveal className="reveal soft-card hover-lift relative rounded-[28px] p-8 md:col-span-4 lg:col-span-2">
           <Quote className="absolute right-7 top-7 text-academic-yellow" size={46} strokeWidth={1.2} />
-          <span className="section-kicker">A note</span>
+          <span className="section-kicker">Kỹ năng nổi bật</span>
           <p className="mt-6 max-w-2xl font-serif text-2xl italic leading-10 text-academic-ink">
-            “Công nghệ không thay thế quá trình tự học, nhưng nếu được sử dụng tỉnh táo, nó giúp người học chủ động hơn.”
+            • Khả năng tìm kiếm, chọn lọc và xử lý thông tin hiệu quả.
+            <br />
+            • Sử dụng các công cụ AI để hỗ trợ học tập và giải quyết công việc.
+            <br />
+            • Tư duy logic, khả năng tự học với công nghệ mới.
+            <br />
+            • Kỹ năng làm việc nhóm và quản lý thời gian.
           </p>
           <div className="mt-7 flex flex-wrap gap-2">
             {student.skills.slice(0, 4).map((skill) => <span className="tag" key={skill}>{skill}</span>)}
@@ -144,32 +150,6 @@ export default function HomeTab() {
               </article>
             );
           })}
-        </div>
-      </section>
-
-      <section data-reveal className="reveal space-y-8">
-        <div className="max-w-3xl">
-          <span className="section-kicker">Digital learning profile</span>
-          <h2 className="mt-4 text-5xl text-academic-ink md:text-6xl">Hồ sơ học tập</h2>
-          <p className="mt-5 text-base leading-8 text-academic-muted">
-            Portfolio phản ánh cách kiến thức ngôn ngữ, năng lực số và tư duy học thuật được kết nối thành một quá trình học tập có hệ thống.
-          </p>
-        </div>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            ['Profile', 'Trọng tâm học tập', 'Ngôn ngữ Pháp, văn hóa Pháp và năng lực giao tiếp trong môi trường học thuật hiện đại.'],
-            ['Objective', 'Mục tiêu học phần', 'Thành thạo công cụ số, biết đánh giá thông tin và sử dụng AI như một trợ lý học tập có trách nhiệm.'],
-            ['Purpose', 'Lý do xây dựng portfolio', 'Hệ thống hóa sản phẩm, minh chứng tiến bộ và nhìn lại hành trình phát triển kỹ năng.'],
-            ['Skills', 'Kỹ năng mũi nhọn', student.skills.join(' · ')],
-            ['Digital focus', 'Định hướng ứng dụng', 'Quản lý dữ liệu, nghiên cứu thông tin, prompt engineering, cộng tác trực tuyến và sáng tạo nội dung.'],
-            ['Academic values', 'Giá trị học thuật', 'Chính xác, minh bạch, tôn trọng bản quyền và chủ động kiểm chứng nội dung do AI hỗ trợ.'],
-          ].map(([label, title, description]) => (
-            <article data-reveal className="reveal soft-card hover-lift rounded-[24px] p-7" key={label}>
-              <span className="section-kicker">{label}</span>
-              <h3 className="mt-4 text-2xl leading-tight text-academic-ink">{title}</h3>
-              <p className="mt-4 text-sm leading-7 text-academic-muted">{description}</p>
-            </article>
-          ))}
         </div>
       </section>
     </div>

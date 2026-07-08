@@ -20,9 +20,18 @@ export default function Summary() {
             </p>
           </div>
           <p className="relative mt-8 whitespace-pre-line text-justify text-base leading-8 text-academic-muted">
-            {`Qua học phần này, em học được cách tổ chức tài liệu rõ ràng hơn, biết đặt tên file dễ hiểu hơn và lưu trữ theo từng môn, từng bài. Em cũng hiểu hơn về cách tìm kiếm thông tin, đánh giá nguồn và sử dụng AI trong học tập. Trước đây em thường hỏi AI khá bản năng, nhưng sau bài về prompt, em nhận ra nếu đưa rõ bối cảnh, yêu cầu và định dạng mong muốn thì kết quả sẽ tốt hơn nhiều.
+            •	Nắm vững kiến thức nền tảng về công nghệ số và trí tuệ nhân tạo. 
+            <br />
+•	Hiểu nguyên lý hoạt động và các ứng dụng cơ bản của AI. 
+            <br />
+•	Phát triển kỹ năng tìm kiếm, đánh giá và xử lý thông tin số. 
+            <br />
+•	Rèn luyện tư duy số và khả năng giải quyết vấn đề. 
+            <br />
+•	Nâng cao kỹ năng làm việc nhóm, thuyết trình và quản lý thời gian. 
+            <br />
+•	Nhận thức được các nguyên tắc đạo đức và trách nhiệm khi sử dụng AI.
 
-Việc làm portfolio bằng web cũng giúp em luyện thêm kỹ năng trình bày sản phẩm số: sắp xếp bố cục, chia nội dung, gắn link báo cáo và làm sao để người xem dễ theo dõi.`}
           </p>
         </article>
 
@@ -47,7 +56,6 @@ Việc làm portfolio bằng web cũng giúp em luyện thêm kỹ năng trình 
           </div>
 
           <figure data-reveal className="reveal glass-card overflow-hidden rounded-[28px]">
-            <img src={avatarImage} alt="Ảnh hồ sơ" className="aspect-[4/5] w-full object-cover" />
             <figcaption className="bg-academic-deep-rose px-6 py-5 font-serif text-xl italic leading-8 text-academic-blush">
               “Học hỏi là một hành trình không bao giờ dừng lại.”
             </figcaption>
@@ -65,23 +73,19 @@ Việc làm portfolio bằng web cũng giúp em luyện thêm kỹ năng trình 
         </article>
         <article data-reveal className="reveal soft-card hover-lift rounded-[24px] p-7">
           <span className="section-kicker">Next steps</span>
-          <h3 className="mt-4 text-3xl text-academic-ink">Kế hoạch hoàn thiện</h3>
+          <h3 className="mt-4 text-3xl text-academic-ink">Điểm mình tâm đắc về Portfolio</h3>
           <p className="mt-5 text-justify text-sm leading-8 text-academic-muted">
-            Sau khi hoàn thành web, em sẽ kiểm tra lại toàn bộ link báo cáo PDF để chắc chắn các file mở được đúng bài. Với những bài không có sản phẩm riêng, em sẽ ghi rõ rằng sản phẩm và minh chứng đã được trình bày trong báo cáo, không tạo thêm link hoặc nội dung không có thật. Em cũng sẽ kiểm tra bản PDF xuất từ portfolio để đảm bảo nội dung không bị thiếu khi nộp lên hệ thống.
+            •	Hệ thống hóa đầy đủ kiến thức đã học trong học phần. 
+                        <br />
+•	Thể hiện rõ quá trình học tập và các sản phẩm đạt được. 
+            <br />
+•	Ứng dụng AI một cách hiệu quả, đúng mục đích và có trách nhiệm. 
+            <br />
+•	Trình bày khoa học, trực quan và dễ theo dõi.
+
           </p>
         </article>
       </div>
-
-      <article data-reveal className="reveal glass-card outcome-glow rounded-[32px] p-8 text-center md:p-10">
-        <h3 className="text-3xl text-academic-ink">Cam kết Liêm chính Học thuật</h3>
-        <p className="mx-auto mt-5 max-w-3xl whitespace-pre-line text-sm italic leading-8 text-academic-muted">
-          {`Em, Đinh Thị Thu Hiền, cam kết các báo cáo và nội dung trong portfolio này phản ánh quá trình học tập và thực hành của bản thân. Em có sử dụng AI như một công cụ hỗ trợ, chủ yếu để gợi ý cách trình bày, sửa code và kiểm tra nội dung.
-
-AI chỉ nên hỗ trợ, không thể thay thế hoàn toàn việc học. Em không tạo minh chứng giả, không ghi sản phẩm không có thật và không cố tình trình bày sai quá trình làm bài của mình!
-
-Em cảm ơn thầy cô đã dành thời gian đọc những dòng này!`}
-        </p>
-      </article>
     </div>
   );
 }

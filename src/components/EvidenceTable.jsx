@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { portfolioData } from '../data/portfolioData';
 import { AlertCircle, CheckCircle2, XCircle, X, Maximize2 } from 'lucide-react';
 
@@ -54,10 +55,9 @@ export default function EvidenceTable() {
     );
   };
 
-  return (
-    <div className="mx-auto max-w-6xl pb-2">
-      {previewData.isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-academic-ink/70 p-4 backdrop-blur-md print:hidden md:p-10">
+  const previewModal = previewData.isOpen
+    ? createPortal(
+        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm print:hidden md:p-10">
           <div className="glass-card flex h-full max-h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-[28px] shadow-glass">
             <div className="flex items-center justify-between border-b border-academic-deep-rose/10 bg-white/45 p-4">
               <h3 className="text-xl text-academic-ink">
@@ -88,9 +88,14 @@ export default function EvidenceTable() {
               )}
             </div>
           </div>
-        </div>
-      )}
+        </div>,
+        document.body,
+      )
+    : null;
 
+  return (
+    <div className="mx-auto max-w-6xl pb-2">
+      {previewModal}
       <div className="mb-10 text-center">
         <span className="section-kicker">Evidence control</span>
         <h2 className="mt-4 text-5xl text-academic-ink md:text-6xl">Bảng kiểm soát minh chứng</h2>

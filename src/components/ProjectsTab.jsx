@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, FileText, FolderOpen, Image, Maximize2, X } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
@@ -15,8 +16,8 @@ function PreviewModal({ previewData, onClose }) {
 
   if (!previewData.isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 z-[90] flex items-center justify-center bg-academic-ink/70 p-4 backdrop-blur-md" onMouseDown={onClose}>
+  return createPortal(
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm" onMouseDown={onClose}>
       <div className="glass-card flex h-[88vh] w-full max-w-6xl flex-col overflow-hidden rounded-[28px] shadow-glass" onMouseDown={(event) => event.stopPropagation()}>
         <div className="flex items-center justify-between gap-4 border-b border-academic-deep-rose/10 bg-white/45 px-5 py-4">
           <div>
@@ -42,7 +43,8 @@ function PreviewModal({ previewData, onClose }) {
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
