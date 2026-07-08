@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic Portfolio — Đinh Thị Thu Hiền</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#ebbe99",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#bedbd8",
+                      "inverse-on-surface": "#f1f1f1",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#d3c4b9",
+                      "surface-tint": "#7a5739",
+                      "secondary-fixed": "#fae19c",
+                      "surface-bright": "#f9f9f9",
+                      "tertiary": "#2f4947",
+                      "surface-container": "#eeeeee",
+                      "on-primary-fixed": "#2d1601",
+                      "outline": "#82756b",
+                      "secondary": "#6e5d25",
+                      "secondary-container": "#fae19c",
+                      "on-secondary-fixed": "#231b00",
+                      "secondary-fixed-dim": "#dcc582",
+                      "primary-fixed": "#ffdcc1",
+                      "on-surface-variant": "#50453c",
+                      "on-tertiary-fixed-variant": "#314b4a",
+                      "primary-fixed-dim": "#ebbe99",
+                      "on-tertiary-fixed": "#04201e",
+                      "surface-dim": "#dadada",
+                      "tertiary-container": "#46615f",
+                      "on-background": "#1a1c1c",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#2f3131",
+                      "surface-variant": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#55450f",
+                      "on-primary": "#ffffff",
+                      "on-surface": "#1a1c1c",
+                      "primary": "#5d3e22",
+                      "tertiary-fixed-dim": "#afccc9",
+                      "surface-container-high": "#e8e8e8",
+                      "surface": "#f9f9f9",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-error-container": "#93000a",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#775537",
+                      "surface-container-low": "#f3f3f3",
+                      "tertiary-fixed": "#cbe8e5",
+                      "on-primary-container": "#facca6",
+                      "on-secondary-container": "#75632b",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed-variant": "#5f4024",
+                      "background": "#f9f9f9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "base": "8px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Libre Caslon Text"],
+                      "headline-lg": ["Libre Caslon Text"],
+                      "headline-lg-mobile": ["Libre Caslon Text"],
+                      "display-lg": ["Libre Caslon Text"],
+                      "label-sm": ["Hanken Grotesk"],
+                      "body-lg": ["Hanken Grotesk"],
+                      "body-md": ["Hanken Grotesk"],
+                      "label-md": ["Hanken Grotesk"]
+              },
+              "fontSize": {
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(241, 241, 241, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .sunlight-shadow {
+            box-shadow: 0 20px 40px rgba(119, 85, 55, 0.08);
+        }
+        body {
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+        .atmospheric-bg {
+            background: linear-gradient(135deg, #f9f9f9 0%, #fae19c33 50%, #cbe8e533 100%);
+        }
+        .diamond-marker {
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            background-color: #775537;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface atmospheric-bg min-h-screen">
+<!-- Top Navigation Shell -->
+<header class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl rounded-full bg-surface-container/80 backdrop-blur-xl border border-primary/10 shadow-[0_20px_40px_rgba(119,85,55,0.08)] z-50 flex justify-between items-center px-8 py-3" id="top-nav">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary italic leading-none">A.C.</span>
+<span class="font-label-sm text-[10px] uppercase tracking-tighter text-on-surface-variant">ULIS - VNU</span>
+</div>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1" href="#">Overview</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Assignments</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Evidence</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Rubric</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Reflection</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-primary/5 rounded-full transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary">account_circle</span>
+</button>
+<button class="md:hidden p-2 hover:bg-primary/5 rounded-full transition-all">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto space-y-12">
+<!-- Hero Section: Editorial Card -->
+<section class="glass-card sunlight-shadow rounded-[32px] p-8 md:p-16 border border-primary/10 overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-fixed/20 blur-[100px] rounded-full -mr-20 -mt-20"></div>
+<div class="relative z-10 flex flex-col gap-8">
+<div class="flex flex-wrap items-center gap-4">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-primary-fixed-variant bg-primary-fixed px-4 py-1.5 rounded-full">Portfolio / Digital &amp; AI Learning</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-4 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                        2025 – 2026
+                    </div>
+</div>
+<div class="space-y-4 max-w-3xl">
+<h1 class="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight">
+                        Portfolio học phần — <br class="hidden md:block"/> Đinh Thị Thu Hiền
+                    </h1>
+<h2 class="font-headline-md text-headline-md text-on-surface-variant italic">
+                        French Language &amp; Culture Learning Portfolio
+                    </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Portfolio học tập ghi lại quá trình ứng dụng công nghệ số và AI trong việc tổ chức tài liệu, tìm kiếm thông tin, trình bày sản phẩm học thuật và khám phá văn hóa Pháp.
+                </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest flex items-center gap-3 hover:shadow-lg hover:-translate-y-0.5 transition-all active:scale-95">
+                        Xem bài tập
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-primary/20 text-primary px-8 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest flex items-center gap-3 hover:bg-primary/5 transition-all active:scale-95">
+                        Mở minh chứng
+                        <span class="material-symbols-outlined">article</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Student Information -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="glass-card sunlight-shadow p-8 rounded-[24px] border border-primary/10 flex flex-col justify-between group hover:border-primary/30 transition-colors">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/60 block mb-8">Trường</span>
+<p class="font-headline-md text-headline-md text-primary">ULIS – VNU</p>
+</div>
+<div class="glass-card sunlight-shadow p-8 rounded-[24px] border border-primary/10 md:col-span-1 flex flex-col justify-between group hover:border-primary/30 transition-colors">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/60 block mb-8">Ngành</span>
+<p class="font-headline-md text-headline-md text-primary">Ngôn ngữ và Văn hóa Pháp</p>
+</div>
+<div class="glass-card sunlight-shadow p-8 rounded-[24px] border border-primary/10 md:col-span-1 flex flex-col justify-between group hover:border-primary/30 transition-colors">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/60 block mb-8">Học phần</span>
+<p class="font-headline-md text-headline-md text-primary">Công nghệ số &amp; Ứng dụng AI</p>
+</div>
+<div class="glass-card sunlight-shadow p-8 rounded-[24px] border border-primary/10 flex flex-col justify-between group hover:border-primary/30 transition-colors bg-gradient-to-br from-white to-secondary-fixed/5">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/60 block mb-4">Sinh viên</span>
+<div class="space-y-1">
+<p class="font-headline-md text-headline-md text-primary">Đinh Thị Thu Hiền</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">MSSV: 25041113</p>
+</div>
+</div>
+</section>
+<!-- Visual Highlights Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 items-center">
+<div class="space-y-8 pr-0 md:pr-12">
+<div class="inline-flex items-center gap-4">
+<div class="w-12 h-[1px] bg-primary/30"></div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary italic">Learning Philosophy</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">Bridge traditional scholarship with modern innovation.</h3>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<div class="mt-2 shrink-0 diamond-marker"></div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md uppercase text-primary">Digital Organization</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Utilizing Notion and AI-driven databases to categorize linguistics research and cultural artifacts.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="mt-2 shrink-0 diamond-marker"></div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md uppercase text-primary">AI-Assisted Analysis</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Applying Large Language Models to decode complex classical French syntax and historical nuances.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="mt-2 shrink-0 diamond-marker"></div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md uppercase text-primary">Cultural Synthesis</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Creating immersive visual portfolios that celebrate the intersection of tech and tradition.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-[40px] overflow-hidden sunlight-shadow border-8 border-white">
+<img class="w-full h-full object-cover" data-alt="A sophisticated top-down desktop setup in a sun-drenched coastal studio. A modern laptop displays complex French calligraphy alongside AI neural network visualizations. The desk is made of light oak wood, featuring a ceramic cup of green tea, a physical scholarly journal, and a singular copper-toned stylus. High-key lighting mimics sunlight through a frosted glass window. Style is editorial minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASV7XsfnNzAblPDN3gg_GPQ5O2evOc9mRP7yW79N5-E-jSL-CmsHEvXS0bndjXXqXsQbEfy3BfbJEEfXvSe2Kttm3by9tdlm82kcheHhSEtmlhX7OaR-oUxL9lEbrHYioHy3Se6fSximNhjyc0gz9j6NFfjqb1a1xeOm3DJJmNFEBzLD1hOC21xDrtxO6vh_dP8qS8XhEdAhMlrJ5U49_byQBKzeMJEj-89mVRWZFq4RPAbCqIsBlfvam8y8xPzX99KKNAMnD41uxi"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-card p-6 rounded-3xl sunlight-shadow border border-primary/10 hidden md:block max-w-[200px]">
+<p class="font-headline-md text-headline-md text-primary italic">"Technology is the brush of the 21st century scholar."</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full mt-20 bg-surface-container-low border-t border-primary/5">
+<div class="max-w-7xl mx-auto px-16 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-md text-headline-md text-primary">Academic Portfolio</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Academic Portfolio. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Student Portal</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Institutional Library</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Research Guidelines</a>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full border border-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</button>
+</div>
+</div>
+</footer>
+<!-- Interactive script for scroll effects -->
+<script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-3');
+                nav.classList.add('bg-surface-container/95');
+            } else {
+                nav.classList.add('py-3');
+                nav.classList.remove('py-2');
+                nav.classList.remove('bg-surface-container/95');
+            }
+        });
+
+        // Hover animation for grid items
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.transition = 'transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>

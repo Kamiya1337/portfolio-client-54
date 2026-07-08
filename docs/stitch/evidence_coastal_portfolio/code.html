@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evidence | Academic Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#ebbe99",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#bedbd8",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#d3c4b9",
+                        "surface-tint": "#7a5739",
+                        "secondary-fixed": "#fae19c",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary": "#2f4947",
+                        "surface-container": "#eeeeee",
+                        "on-primary-fixed": "#2d1601",
+                        "outline": "#82756b",
+                        "secondary": "#6e5d25",
+                        "secondary-container": "#fae19c",
+                        "on-secondary-fixed": "#231b00",
+                        "secondary-fixed-dim": "#dcc582",
+                        "primary-fixed": "#ffdcc1",
+                        "on-surface-variant": "#50453c",
+                        "on-tertiary-fixed-variant": "#314b4a",
+                        "primary-fixed-dim": "#ebbe99",
+                        "on-tertiary-fixed": "#04201e",
+                        "surface-dim": "#dadada",
+                        "tertiary-container": "#46615f",
+                        "on-background": "#1a1c1c",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2f3131",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#55450f",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "primary": "#5d3e22",
+                        "tertiary-fixed-dim": "#afccc9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#775537",
+                        "surface-container-low": "#f3f3f3",
+                        "tertiary-fixed": "#cbe8e5",
+                        "on-primary-container": "#facca6",
+                        "on-secondary-container": "#75632b",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#5f4024",
+                        "background": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #f9f9f9;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(203, 232, 229, 0.3) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(250, 225, 156, 0.2) 0px, transparent 50%);
+            min-height: 100vh;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(122, 87, 57, 0.1);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl rounded-full bg-surface-container/80 backdrop-blur-xl z-50 shadow-[0_20px_40px_rgba(119,85,55,0.08)] border border-primary/10 flex justify-between items-center px-8 py-3">
+<div class="font-headline-md text-headline-md text-primary italic">A.C.</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 rounded-full px-3 py-1" href="#">Overview</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 rounded-full px-3 py-1" href="#">Assignments</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1" href="#">Evidence</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 rounded-full px-3 py-1" href="#">Rubric</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/5 rounded-full px-3 py-1" href="#">Reflection</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary hover:scale-95 duration-200">account_circle</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Header Section -->
+<header class="text-center mb-16 space-y-4">
+<span class="font-label-md text-label-md text-tertiary-container uppercase tracking-[0.2em]">Digital Learning Cases</span>
+<h1 class="font-display-lg text-display-lg text-primary text-balance">6 case học phần</h1>
+<p class="max-w-2xl mx-auto font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Sáu bài tập ghi lại cách kiến thức được chuyển thành sản phẩm, minh chứng và trải nghiệm học tập thực tế.
+            </p>
+</header>
+<!-- Bento Grid / Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Case 01 -->
+<div class="liquid-glass rounded-[32px] p-8 flex flex-col justify-between group transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 border-primary/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-primary-container">CASE 01</p>
+<p class="font-label-md text-label-md text-on-surface-variant">CHƯƠNG 1 &amp; 2</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase">Hoàn thành</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Bài 1: Máy tính và quản lý tệp/thư mục</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Tổ chức không gian làm việc số và thiết lập quy tắc quản lý dữ liệu cá nhân.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Quản lý hệ điều hành</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Tổ chức dữ liệu</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Lưu trữ đám mây</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-primary/5">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-primary/20">Xem chi tiết</button>
+<button class="p-3 rounded-full border border-primary/20 text-primary hover:bg-primary/5 transition-colors group">
+<span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</div>
+<!-- Case 02 -->
+<div class="liquid-glass rounded-[32px] p-8 flex flex-col justify-between group transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 border-primary/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-primary-container">CASE 02</p>
+<p class="font-label-md text-label-md text-on-surface-variant">CHƯƠNG 2</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase">Hoàn thành</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Bài 2: Khai thác dữ liệu và đánh giá thông tin</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Áp dụng toán tử tìm kiếm nâng cao và đánh giá nguồn tin học thuật.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Toán tử tìm kiếm</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Đánh giá CRAAP</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Phân tích tin giả</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-primary/5">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-primary/20">Xem chi tiết</button>
+<button class="p-3 rounded-full border border-primary/20 text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</div>
+<!-- Case 03 -->
+<div class="liquid-glass rounded-[32px] p-8 flex flex-col justify-between group transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 border-primary/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-primary-container">CASE 03</p>
+<p class="font-label-md text-label-md text-on-surface-variant">CHƯƠNG 3</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase">Hoàn thành</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Bài 3: Viết prompt hiệu quả và sử dụng AI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Kỹ thuật giao tiếp với mô hình ngôn ngữ lớn (LLMs) để tối ưu hiệu suất.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Prompt Engineering</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Generative AI</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-primary/5">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-primary/20">Xem chi tiết</button>
+<button class="p-3 rounded-full border border-primary/20 text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</div>
+<!-- Case 04 -->
+<div class="liquid-glass rounded-[32px] p-8 flex flex-col justify-between group transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 border-primary/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-primary-container">CASE 04</p>
+<p class="font-label-md text-label-md text-on-surface-variant">CHƯƠNG 4</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase">Hoàn thành</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Bài 4: Hợp tác trực tuyến trong môi trường số</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Sử dụng các nền tảng số để quản lý dự án và làm việc nhóm từ xa.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Collaboration</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Cloud Office</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-primary/5">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-primary/20">Xem chi tiết</button>
+<button class="p-3 rounded-full border border-primary/20 text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</div>
+<!-- Case 05 -->
+<div class="liquid-glass rounded-[32px] p-8 flex flex-col justify-between group transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 border-primary/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-primary-container">CASE 05</p>
+<p class="font-label-md text-label-md text-on-surface-variant">CHƯƠNG 5</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase">Hoàn thành</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Bài 5: An toàn thông tin và Đạo đức số</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Phân tích rủi ro an ninh mạng và các nguyên tắc đạo đức trong kỷ nguyên AI.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Cybersecurity</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Digital Ethics</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-primary/5">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-primary/20">Xem chi tiết</button>
+<button class="p-3 rounded-full border border-primary/20 text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</div>
+<!-- Case 06 -->
+<div class="liquid-glass rounded-[32px] p-8 flex flex-col justify-between group transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 border-primary/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-primary-container">CASE 06</p>
+<p class="font-label-md text-label-md text-on-surface-variant">CHƯƠNG 6</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase">Hoàn thành</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Bài 6: Thiết kế Portfolio điện tử cá nhân</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Xây dựng thương hiệu cá nhân thông qua việc tổng hợp minh chứng học tập.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">e-Portfolio</span>
+<span class="bg-on-tertiary-container/30 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-medium text-tertiary">Digital Identity</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-primary/5">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 shadow-lg shadow-primary/20">Xem chi tiết</button>
+<button class="p-3 rounded-full border border-primary/20 text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">description</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Featured Reflection Section -->
+<section class="mt-24 liquid-glass rounded-[40px] overflow-hidden grid md:grid-cols-2">
+<div class="p-12 md:p-16 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Hành trình trải nghiệm số</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                    Mỗi case học phần không chỉ là một bài tập kỹ thuật, mà là một bước tiến trong việc xây dựng tư duy số hiện đại. Qua đó, sinh viên học được cách thích nghi, sáng tạo và quản lý thông tin hiệu quả trong môi trường học thuật chuyên nghiệp.
+                </p>
+<div class="flex items-center gap-6">
+<div class="flex -space-x-3">
+<img class="w-12 h-12 rounded-full border-2 border-white object-cover" data-alt="Close-up portrait of a diverse university student smiling warmly, soft academic library lighting in the background, professional editorial style photography, warm skin tones, high key lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCITmOt2AzBPjpgxQ299-2P4SgGphu9eLM-JAy_BYJa1oOY_Bil6WiIuwH1MXQNBAjx034JRPgZ1bxwnWLXLieCt_amCC7k1GGMdVD7ZVbM9W0x0txhtDv4BO03kELWi9ECU4K4yDNu4AzBvoUgHyX0Gfjx2wMVBYoGLIZVnjS5MjugombyvkiHhNiehX1OuiXPgcGiK3XpieL4-7a69uAMKBttwuIMUtrd0OvMNMvudOZODO4KEr_iKX74nYybwOlIPTd8h9wIyxGb"/>
+<img class="w-12 h-12 rounded-full border-2 border-white object-cover" data-alt="Portrait of a young academic professional, soft daylight filtering through frosted glass windows, minimalist modern aesthetic, serene and intellectual mood, neutral color palette with hints of nebula blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsLTzdJextk-oopsw83RV6qfU_jUf9afGS6wfBW5UkFPJ8_PNnX9CHm4Z2clQwFVdPAbI9bHMskns98bsfHG5pQu9Z9_4cpSsUqby30xUpQR9ZOsxY_RfRPEwY1MEoo7kh6-epsNuWzKQvAvJhe1qgxiw7gK2eaSf3OsgtN9uJKKaWrZhcGRz1qYCkEgrUt0iP1_vqvahyyM6EL-n80kon_ErXgeRqu193m1WptYEsdgtKU515-9cukkjhfNtLkD6SPOxUfdl4tkTK"/>
+<img class="w-12 h-12 rounded-full border-2 border-white object-cover" data-alt="Portrait of a confident student in a sun-drenched modern study space, breathable airy atmosphere, high-end editorial minimalist style, clean lines and soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2jvPuQMMvOH1LCLLWU9WvEhWo5V3Yx6FxtDqgMJo8tCtZ8syHKk87a_DAyurvq-SrUUWyUivy8UJS3Iij-MWqrkYIKPhDWUtnboRVKMqaOyi4D0Kfnrln7VgSWjHcXKXzC0o-DlowZRqMNjEFPesNZ-xruAzr4wfRZzv74sE_BxG--Hp37F9MfDlBlEEj8nQLNPFKjkmmQ8Qp8HYOie1LH9s0yyR7vp-vyUlhwnPkUqIaJbkj3YfRCehULdCXFmsMnJfLlNZNrXXo"/>
+</div>
+<span class="font-label-md text-label-md text-tertiary">+120 Students Participated</span>
+</div>
+</div>
+<div class="relative h-[400px] md:h-auto overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene, high-end coastal retreat library at sunset, featuring sunlight streaming through large floor-to-ceiling windows, dust motes dancing in the light, warm wood textures, and a minimalist academic atmosphere. The aesthetic is clean, intellectual, and expansive, using a palette of soft golds and nebula blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2yYLscECjgOUWOGLYNnnhchCQz4Sq6Sa9P-mAmZfBF10Q4RnO777bb4st1V0oS52LCtI2pjZWcY4HGz8sVarCweYVv1Iwf6XHhumM05Ob5qohAYzc-4LGqvQDKpaeE8U3jHbTtlKC5gtLiMHExoKtCmDVVmmBWGQq4xZMRF955WE2lgdtpERWa6ASNBDHahYM8SNsZzsl33kkDKcrATxRQepHSc42gjNA2ezdMsVq4_ZxzWmiYeoXMHzOVVEjBIkCnYPD6eNNu-aG"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low/80 to-transparent md:from-transparent"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-surface-container-low">
+<div class="bg-surface-container-lowest h-1 w-full"></div>
+<div class="max-w-7xl mx-auto px-16 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="space-y-4 text-center md:text-left">
+<div class="font-headline-md text-headline-md text-primary">A.C.</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Academic Portfolio. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Student Portal</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Institutional Library</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Research Guidelines</a>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle interaction script for buttons
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.97)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = 'scale(1)';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'scale(1)';
+            });
+        });
+
+        // Simple scroll reveal effect
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.liquid-glass').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
