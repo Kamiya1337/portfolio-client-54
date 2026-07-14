@@ -98,12 +98,12 @@ export const portfolioData = {
     }
   ],
   rubric: [
-    { criteria: "Thiết kế và cấu trúc Portfolio", excellent: "Chuyên nghiệp, sáng tạo, điều hướng tốt, UI/UX hiện đại.", status: "Hoàn thiện 90%", action: "Bổ sung ảnh minh họa thực tế" },
-    { criteria: "Bài 1: Quản lý tệp/thư mục", excellent: "Cấu trúc tối ưu, quy tắc đặt tên rõ ràng, minh họa sắc nét.", status: "Chưa có ảnh", action: "Chụp ảnh màn hình Drive/Máy tính" },
-    { criteria: "Bài 2: Tìm kiếm & Đánh giá", excellent: "Bảng đánh giá CRAAP chi tiết, dùng toán tử nâng cao hiệu quả.", status: "Đang viết báo cáo", action: "Hoàn thiện file PDF báo cáo CRAAP" },
-    { criteria: "Bài 3: Viết Prompt hiệu quả", excellent: "So sánh rõ ràng trước/sau, phân tích lỗi và cải tiến sâu sắc.", status: "Thiếu dữ liệu", action: "Chụp ảnh màn hình đoạn chat với AI" },
-    { criteria: "Bài 4: Hợp tác trực tuyến", excellent: "Minh chứng rõ việc chia task, họp nhóm và quản lý tiến độ.", status: "Thiếu dữ liệu", action: "Chụp ảnh Trello/Notion nhóm" },
-    { criteria: "Bài 5: Sáng tạo nội dung với AI", excellent: "Sản phẩm đẹp, sáng tạo, trích dẫn rõ phần nào dùng AI.", status: "Chưa có sản phẩm", action: "Upload video/hình ảnh hoàn thiện" },
-    { criteria: "Bài 6: AI có trách nhiệm", excellent: "Bộ nguyên tắc cá nhân chặt chẽ, tư duy phản biện cao.", status: "Đang soạn thảo", action: "Viết chi tiết bộ 5 nguyên tắc ra Word" },
+    { criteria: "Thiết kế và cấu trúc Portfolio", excellent: "Chuyên nghiệp, sáng tạo, điều hướng tốt, UI/UX hiện đại.", status: "Hoàn thiện", action: "Tối ưu hóa UI/UX website" },
+    { criteria: "Bài 1: Quản lý tệp/thư mục", excellent: "Cấu trúc tối ưu, quy tắc đặt tên rõ ràng, trình bày chi tiết.", status: "Hoàn thiện", action: "Hoàn thiện file báo cáo PDF" },
+    { criteria: "Bài 2: Tìm kiếm & Đánh giá", excellent: "Bảng đánh giá CRAAP chi tiết, dùng toán tử nâng cao hiệu quả.", status: "Hoàn thiện", action: "Hoàn thiện file báo cáo PDF" },
+    { criteria: "Bài 3: Viết Prompt hiệu quả", excellent: "So sánh rõ ràng trước/sau, phân tích lỗi và cải tiến sâu sắc.", status: "Hoàn thiện", action: "Hoàn thiện file báo cáo PDF" },
+    { criteria: "Bài 4: Hợp tác trực tuyến", excellent: "Báo cáo rõ việc chia task, họp nhóm và quản lý tiến độ.", status: "Hoàn thiện", action: "Hoàn thiện file báo cáo PDF" },
+    { criteria: "Bài 5: Sáng tạo nội dung với AI", excellent: "Sản phẩm đẹp, sáng tạo, trích dẫn rõ phần nào dùng AI trong báo cáo.", status: "Hoàn thiện", action: "Hoàn thiện file báo cáo PDF" },
+    { criteria: "Bài 6: AI có trách nhiệm", excellent: "Bộ nguyên tắc cá nhân chặt chẽ, tư duy phản biện cao.", status: "Hoàn thiện", action: "Hoàn thiện file báo cáo PDF" },
   ]
 };

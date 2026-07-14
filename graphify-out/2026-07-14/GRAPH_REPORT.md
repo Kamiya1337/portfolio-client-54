@@ -1,18 +1,12 @@
-# Graph Report - portfolio-client-54  (2026-07-14)
+# Graph Report - D:\Project\portfolio-client-02  (2026-06-15)
 
 ## Corpus Check
-- 18 files · ~737,330 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
-- 97 nodes · 98 edges · 22 communities (10 shown, 12 thin omitted)
-- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.88)
+- 83 nodes · 84 edges · 20 communities (8 shown, 12 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `5feca59d`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
@@ -31,20 +25,18 @@
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
 - [[_COMMUNITY_Community 19|Community 19]]
-- [[_COMMUNITY_Community 20|Community 20]]
-- [[_COMMUNITY_Community 21|Community 21]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Google Drive Screenshot - Bài 3` - 8 edges
 2. `portfolioData` - 6 edges
 3. `Index HTML` - 6 edges
 4. `scripts` - 5 edges
-5. `React + Vite` - 5 edges
-6. `ResourceAction()` - 3 edges
-7. `App()` - 2 edges
-8. `EvidenceTable()` - 2 edges
-9. `HomeTab()` - 2 edges
-10. `unavailable()` - 2 edges
+5. `App()` - 2 edges
+6. `EvidenceTable()` - 2 edges
+7. `HomeTab()` - 2 edges
+8. `PrintView()` - 2 edges
+9. `ProjectsTab()` - 2 edges
+10. `RubricTable()` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Index HTML` --references--> `ULIS Logo`  [EXTRACTED]
@@ -53,19 +45,19 @@
   index.html → public/logo.png
 - `Index HTML` --calls--> `Main Entry Point`  [EXTRACTED]
   index.html → src/main.jsx
-- `graphify` --conceptually_related_to--> `React + Vite`  [INFERRED]
-  AGENTS.md → README.md
-- `React + Vite` --conceptually_related_to--> `Index HTML`  [INFERRED]
+- `React + Vite Template` --conceptually_related_to--> `Index HTML`  [INFERRED]
   README.md → index.html
+- `Graphify Agent Instructions` --conceptually_related_to--> `React + Vite Template`  [INFERRED]
+  AGENTS.md → README.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (22 total, 12 thin omitted)
+## Communities (20 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.26
-Nodes (7): EvidenceTable(), HomeTab(), RubricTable(), Sidebar(), Summary(), portfolioData, App()
+Cohesion: 0.24
+Nodes (8): EvidenceTable(), HomeTab(), PrintView(), ProjectsTab(), RubricTable(), Sidebar(), Summary(), portfolioData
 
 ### Community 1 - "Community 1"
 Cohesion: 0.14
@@ -76,30 +68,20 @@ Cohesion: 0.15
 Nodes (13): devDependencies, autoprefixer, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, globals, postcss (+5 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.18
-Nodes (9): graphify, Index HTML, ULIS Logo, French Language & Culture Learning Portfolio, Đại học Công nghệ Logo, Expanding the ESLint configuration, React Compiler, React + Vite (+1 more)
-
-### Community 20 - "Community 20"
-Cohesion: 0.25
-Nodes (7): Brand & Style, Colors, Components, Elevation & Depth, Layout & Spacing, Shapes, Typography
-
-### Community 21 - "Community 21"
-Cohesion: 0.47
-Nodes (4): notRequired(), ProjectsTab(), ResourceAction(), unavailable()
+Cohesion: 0.22
+Nodes (8): Graphify Agent Instructions, Index HTML, ULIS Logo, French Language & Culture Learning Portfolio, Đại học Công nghệ Logo, React + Vite Template, App(), Main Entry Point
 
 ## Knowledge Gaps
-- **45 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+40 more)
+- **37 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+32 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Index HTML` connect `Community 4` to `Community 0`?**
-  _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.051) - this node is a cross-community bridge._
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _45 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _37 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._

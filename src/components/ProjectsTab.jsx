@@ -129,8 +129,6 @@ export default function ProjectsTab() {
             <p className="section-kicker mb-4">Tài liệu & minh chứng</p>
             <div className="flex flex-wrap gap-3">
               <ResourceAction value={selectedProject.report} type="pdf" onPreview={openPreview} />
-              <ResourceAction value={selectedProject.evidenceImg} type="img" onPreview={openPreview} />
-              <ResourceAction value={selectedProject.driveLink} type="drive" onPreview={openPreview} />
             </div>
           </div>
         </article>

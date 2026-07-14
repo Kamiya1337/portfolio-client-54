@@ -3,11 +3,10 @@ import { portfolioData } from '../data/portfolioData';
 
 export default function RubricTable() {
   const { projects, rubric } = portfolioData;
-  const totalMilestones = projects.length * 2;
+  const totalMilestones = projects.length;
   const completedMilestones = projects.reduce((acc, project) => {
     const reportDone = project.report !== 'Sẽ cập nhật sau' && project.report !== '' && project.report !== 'Không yêu cầu';
-    const imgDone = project.evidenceImg !== 'Sẽ cập nhật sau' && project.evidenceImg !== '' && project.evidenceImg !== 'Không yêu cầu';
-    return acc + (reportDone ? 1 : 0) + (imgDone ? 1 : 0);
+    return acc + (reportDone ? 1 : 0);
   }, 0);
   const progressPercent = Math.round(50 + (completedMilestones / totalMilestones) * 50);
 
@@ -32,15 +31,14 @@ export default function RubricTable() {
         </div>
         <div className="mt-5 flex items-center gap-2 text-sm text-academic-muted">
           <RefreshCw size={15} />
-          <span>{completedMilestones}/{totalMilestones} mục báo cáo và ảnh minh chứng đã được đồng bộ.</span>
+          <span>{completedMilestones}/{totalMilestones} báo cáo PDF đã được đồng bộ.</span>
         </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => {
           const reportDone = project.report !== 'Sẽ cập nhật sau' && project.report !== '' && project.report !== 'Không yêu cầu';
-          const imgDone = project.evidenceImg !== 'Sẽ cập nhật sau' && project.evidenceImg !== '' && project.evidenceImg !== 'Không yêu cầu';
-          const isFullyDone = reportDone && imgDone;
+          const isFullyDone = reportDone;
           const rubricItem = rubric[project.id];
 
           return (
@@ -51,7 +49,7 @@ export default function RubricTable() {
               </span>
               <h3 className="mt-8 text-2xl leading-tight text-academic-ink">{project.title}</h3>
               <p className="mt-5 inline-flex rounded-full bg-academic-yellow/80 px-4 py-2 text-xs font-bold uppercase tracking-[0.06em] text-academic-warning">
-                {isFullyDone ? 'Đạt chuẩn minh chứng' : 'Cần bổ sung minh chứng'}
+                {isFullyDone ? 'Đạt chuẩn báo cáo' : 'Cần bổ sung báo cáo'}
               </p>
               {rubricItem && <p className="mt-6 text-base leading-8 text-academic-muted">{rubricItem.action}</p>}
               <div className="mt-7 h-2 w-2 rotate-45 bg-academic-deep-rose/25" />
